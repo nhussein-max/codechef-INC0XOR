@@ -1,0 +1,1517 @@
+tests:
+- id: test001
+  filename: inputs/test001.txt
+  description: Types=random,same_msb,near_power | T=9
+  expected_output: '337749098
+
+    23577699
+
+    135890
+
+    2
+
+    1185015
+
+    60510195
+
+    3181345
+
+    205853
+
+    1'
+- id: test002
+  filename: inputs/test002.txt
+  description: Types=xor_zero,same_msb,all_odd_xor_one | T=5
+  expected_output: '0
+
+    1064
+
+    299085
+
+    267753
+
+    155'
+- id: test003
+  filename: inputs/test003.txt
+  description: Types=random,near_power | T=4
+  expected_output: '447270127
+
+    572282830
+
+    36763
+
+    104871188'
+- id: test004
+  filename: inputs/test004.txt
+  description: Types=xor_zero | T=9
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test005
+  filename: inputs/test005.txt
+  description: Types=near_power,same_msb,all_odd_xor_one | T=6
+  expected_output: '12
+
+    96
+
+    3
+
+    12
+
+    418
+
+    294'
+- id: test006
+  filename: inputs/test006.txt
+  description: Types=xor_zero,all_odd_xor_one | T=9
+  expected_output: '31
+
+    3
+
+    2
+
+    0
+
+    4
+
+    5
+
+    12
+
+    38
+
+    12'
+- id: test007
+  filename: inputs/test007.txt
+  description: Types=xor_zero | T=3
+  expected_output: '0
+
+    0
+
+    0'
+- id: test008
+  filename: inputs/test008.txt
+  description: Types=duplicates | T=3
+  expected_output: '0
+
+    0
+
+    8388620'
+- id: test009
+  filename: inputs/test009.txt
+  description: Types=same_msb,duplicates,all_odd_xor_one | T=9
+  expected_output: '0
+
+    43164
+
+    13
+
+    164
+
+    0
+
+    0
+
+    0
+
+    86
+
+    650643'
+- id: test010
+  filename: inputs/test010.txt
+  description: Types=random,duplicates | T=4
+  expected_output: '815
+
+    0
+
+    0
+
+    565376'
+- id: test011
+  filename: inputs/test011.txt
+  description: Types=xor_zero,random | T=9
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    517025528
+
+    0
+
+    0
+
+    359138014
+
+    759352518'
+- id: test012
+  filename: inputs/test012.txt
+  description: Types=near_power,same_msb,random | T=8
+  expected_output: '138389139
+
+    29961852
+
+    91607
+
+    3
+
+    65450
+
+    346319318
+
+    31209
+
+    2096968'
+- id: test013
+  filename: inputs/test013.txt
+  description: Types=random,duplicates | T=10
+  expected_output: '176956427
+
+    4922095
+
+    6330110
+
+    0
+
+    194132430
+
+    1347405411
+
+    0
+
+    281972914
+
+    749889502
+
+    0'
+- id: test014
+  filename: inputs/test014.txt
+  description: Types=xor_zero,duplicates | T=8
+  expected_output: '0
+
+    0
+
+    0
+
+    1339971
+
+    0
+
+    0
+
+    0
+
+    11311279'
+- id: test015
+  filename: inputs/test015.txt
+  description: Types=random,xor_zero,duplicates | T=4
+  expected_output: '0
+
+    101294676
+
+    0
+
+    627236'
+- id: test016
+  filename: inputs/test016.txt
+  description: Types=near_power,duplicates,xor_zero | T=10
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    130930
+
+    0
+
+    0
+
+    0'
+- id: test017
+  filename: inputs/test017.txt
+  description: Types=all_odd_xor_one,near_power | T=4
+  expected_output: '3
+
+    7
+
+    4
+
+    417'
+- id: test018
+  filename: inputs/test018.txt
+  description: Types=same_msb | T=7
+  expected_output: '295
+
+    19716
+
+    1397424
+
+    11901
+
+    269013
+
+    934214
+
+    2'
+- id: test019
+  filename: inputs/test019.txt
+  description: Types=xor_zero,near_power,duplicates | T=6
+  expected_output: '0
+
+    529398
+
+    0
+
+    4
+
+    3
+
+    0'
+- id: test020
+  filename: inputs/test020.txt
+  description: Types=duplicates,near_power,random | T=7
+  expected_output: '113178216
+
+    3145720
+
+    267440041
+
+    7
+
+    237333528
+
+    515540378
+
+    1539402'
+- id: test021
+  filename: inputs/test021.txt
+  description: Types=same_msb,near_power | T=5
+  expected_output: '3
+
+    6
+
+    8
+
+    6
+
+    3'
+- id: test022
+  filename: inputs/test022.txt
+  description: Types=same_msb | T=8
+  expected_output: '43964678
+
+    1126
+
+    2990
+
+    591
+
+    691
+
+    261455
+
+    292303
+
+    206'
+- id: test023
+  filename: inputs/test023.txt
+  description: Types=all_odd_xor_one,same_msb | T=9
+  expected_output: '2
+
+    4
+
+    146
+
+    251808
+
+    27
+
+    4924
+
+    7
+
+    101
+
+    19'
+- id: test024
+  filename: inputs/test024.txt
+  description: Types=random | T=3
+  expected_output: '19290188
+
+    111718954
+
+    153108213'
+- id: test025
+  filename: inputs/test025.txt
+  description: Types=near_power,duplicates,same_msb | T=9
+  expected_output: '0
+
+    1448
+
+    20670918
+
+    0
+
+    2
+
+    4
+
+    46
+
+    0
+
+    16890'
+- id: test026
+  filename: inputs/test026.txt
+  description: Types=all_odd_xor_one | T=10
+  expected_output: '4
+
+    6
+
+    13
+
+    2
+
+    2
+
+    8
+
+    2
+
+    68
+
+    3
+
+    23'
+- id: test027
+  filename: inputs/test027.txt
+  description: Types=all_odd_xor_one,xor_zero | T=9
+  expected_output: '7
+
+    2
+
+    15
+
+    0
+
+    13
+
+    0
+
+    28
+
+    0
+
+    0'
+- id: test028
+  filename: inputs/test028.txt
+  description: Types=random | T=6
+  expected_output: '438472385
+
+    98368413
+
+    614464447
+
+    571283844
+
+    47306797
+
+    632871636'
+- id: test029
+  filename: inputs/test029.txt
+  description: Types=xor_zero,duplicates,same_msb | T=6
+  expected_output: '22115
+
+    47417
+
+    0
+
+    616
+
+    770
+
+    0'
+- id: test030
+  filename: inputs/test030.txt
+  description: Types=near_power | T=6
+  expected_output: '2
+
+    4
+
+    4
+
+    61
+
+    4
+
+    4194232'
+- id: test031
+  filename: inputs/test031.txt
+  description: Types=random | T=4
+  expected_output: '651507601
+
+    477600673
+
+    226
+
+    57562069'
+- id: test032
+  filename: inputs/test032.txt
+  description: Types=same_msb,all_odd_xor_one | T=7
+  expected_output: '4
+
+    2
+
+    52406
+
+    22
+
+    77
+
+    2648
+
+    73'
+- id: test033
+  filename: inputs/test033.txt
+  description: Types=duplicates,random,xor_zero | T=9
+  expected_output: '0
+
+    889897541
+
+    0
+
+    0
+
+    79870043
+
+    8388615
+
+    0
+
+    16241568
+
+    0'
+- id: test034
+  filename: inputs/test034.txt
+  description: Types=near_power,duplicates,xor_zero | T=7
+  expected_output: '0
+
+    0
+
+    157
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test035
+  filename: inputs/test035.txt
+  description: Types=random | T=5
+  expected_output: '433442395
+
+    71152444
+
+    11145722
+
+    155801057
+
+    324259316'
+- id: test036
+  filename: inputs/test036.txt
+  description: Types=all_odd_xor_one | T=6
+  expected_output: '11
+
+    1
+
+    11
+
+    4
+
+    5
+
+    3'
+- id: test037
+  filename: inputs/test037.txt
+  description: Types=all_odd_xor_one | T=7
+  expected_output: '1
+
+    49
+
+    6
+
+    8
+
+    12
+
+    54
+
+    2'
+- id: test038
+  filename: inputs/test038.txt
+  description: Types=near_power | T=6
+  expected_output: '7
+
+    4194202
+
+    76
+
+    5
+
+    4039
+
+    4'
+- id: test039
+  filename: inputs/test039.txt
+  description: Types=same_msb | T=9
+  expected_output: '154181
+
+    43
+
+    65230
+
+    214144
+
+    3
+
+    281062
+
+    60
+
+    10876
+
+    13167'
+- id: test040
+  filename: inputs/test040.txt
+  description: Types=all_odd_xor_one,same_msb | T=9
+  expected_output: '26
+
+    42
+
+    5331030
+
+    1033
+
+    3
+
+    2254
+
+    8
+
+    14498
+
+    27851367'
+- id: test041
+  filename: inputs/test041.txt
+  description: Types=near_power,duplicates,xor_zero | T=7
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    729425
+
+    0'
+- id: test042
+  filename: inputs/test042.txt
+  description: Types=duplicates,random,all_odd_xor_one | T=8
+  expected_output: '402233690
+
+    0
+
+    1523723
+
+    246314993
+
+    0
+
+    0
+
+    16777231
+
+    13'
+- id: test043
+  filename: inputs/test043.txt
+  description: Types=same_msb,random | T=8
+  expected_output: '237219803
+
+    451064811
+
+    72
+
+    10852412
+
+    116038
+
+    193824
+
+    591882033
+
+    19839359'
+- id: test044
+  filename: inputs/test044.txt
+  description: Types=all_odd_xor_one | T=6
+  expected_output: '11
+
+    5
+
+    1
+
+    12
+
+    2
+
+    8'
+- id: test045
+  filename: inputs/test045.txt
+  description: Types=duplicates,all_odd_xor_one,same_msb | T=5
+  expected_output: '3
+
+    4
+
+    40
+
+    8321785
+
+    0'
+- id: test046
+  filename: inputs/test046.txt
+  description: Types=near_power | T=5
+  expected_output: '10
+
+    2
+
+    7
+
+    2
+
+    3'
+- id: test047
+  filename: inputs/test047.txt
+  description: Types=xor_zero,random,near_power | T=5
+  expected_output: '0
+
+    16320
+
+    261992
+
+    2097088
+
+    652376738'
+- id: test048
+  filename: inputs/test048.txt
+  description: Types=duplicates,near_power,xor_zero | T=3
+  expected_output: '0
+
+    0
+
+    168515012'
+- id: test049
+  filename: inputs/test049.txt
+  description: Types=all_odd_xor_one,same_msb | T=9
+  expected_output: '5
+
+    11936519
+
+    5
+
+    10780484
+
+    2
+
+    282023
+
+    12
+
+    26264070
+
+    9'
+- id: test050
+  filename: inputs/test050.txt
+  description: Types=all_odd_xor_one | T=3
+  expected_output: '23
+
+    10
+
+    44'
+- id: test051
+  filename: inputs/test051.txt
+  description: Types=same_msb | T=7
+  expected_output: '642886
+
+    8266
+
+    17051059
+
+    49
+
+    14
+
+    80147
+
+    1808'
+- id: test052
+  filename: inputs/test052.txt
+  description: Types=near_power,duplicates | T=10
+  expected_output: '691715811
+
+    74
+
+    5
+
+    0
+
+    2097000
+
+    32641
+
+    0
+
+    0
+
+    1
+
+    65360'
+- id: test053
+  filename: inputs/test053.txt
+  description: Types=same_msb,random | T=9
+  expected_output: '3
+
+    6
+
+    3698
+
+    15086
+
+    784
+
+    24792525
+
+    730400587
+
+    3012
+
+    293126326'
+- id: test054
+  filename: inputs/test054.txt
+  description: Types=random,xor_zero,same_msb | T=9
+  expected_output: '0
+
+    656016600
+
+    0
+
+    0
+
+    0
+
+    107
+
+    0
+
+    2837
+
+    335890862'
+- id: test055
+  filename: inputs/test055.txt
+  description: Types=xor_zero | T=3
+  expected_output: '0
+
+    0
+
+    0'
+- id: test056
+  filename: inputs/test056.txt
+  description: Types=xor_zero | T=7
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test057
+  filename: inputs/test057.txt
+  description: Types=duplicates | T=7
+  expected_output: '94085
+
+    0
+
+    0
+
+    300278
+
+    0
+
+    148187
+
+    0'
+- id: test058
+  filename: inputs/test058.txt
+  description: Types=all_odd_xor_one | T=8
+  expected_output: '3
+
+    2
+
+    23
+
+    35
+
+    2
+
+    4
+
+    5
+
+    6'
+- id: test059
+  filename: inputs/test059.txt
+  description: Types=xor_zero,near_power | T=10
+  expected_output: '8
+
+    6
+
+    0
+
+    2
+
+    7
+
+    32674
+
+    6
+
+    262015
+
+    6
+
+    0'
+- id: test060
+  filename: inputs/test060.txt
+  description: Types=random | T=7
+  expected_output: '802575896
+
+    276137028
+
+    74866788
+
+    298865879
+
+    522884221
+
+    155348321
+
+    62469771'
+- id: test061
+  filename: inputs/test061.txt
+  description: Types=all_odd_xor_one,near_power,duplicates | T=5
+  expected_output: '24576
+
+    0
+
+    4107
+
+    0
+
+    4'
+- id: test062
+  filename: inputs/test062.txt
+  description: Types=all_odd_xor_one | T=9
+  expected_output: '9
+
+    8
+
+    20
+
+    10
+
+    8
+
+    8
+
+    7
+
+    6
+
+    70'
+- id: test063
+  filename: inputs/test063.txt
+  description: Types=all_odd_xor_one,random,xor_zero | T=4
+  expected_output: '842252064
+
+    6
+
+    248151541
+
+    0'
+- id: test064
+  filename: inputs/test064.txt
+  description: Types=same_msb,duplicates,all_odd_xor_one | T=4
+  expected_output: '29
+
+    156
+
+    16
+
+    13'
+- id: test065
+  filename: inputs/test065.txt
+  description: Types=all_odd_xor_one,same_msb,duplicates | T=7
+  expected_output: '599
+
+    92
+
+    680878
+
+    573367
+
+    12
+
+    165
+
+    1337256'
+- id: test066
+  filename: inputs/test066.txt
+  description: Types=near_power,same_msb | T=4
+  expected_output: '25
+
+    26902418
+
+    16852
+
+    1300073'
+- id: test067
+  filename: inputs/test067.txt
+  description: Types=random | T=3
+  expected_output: '310051813
+
+    42764851
+
+    538631'
+- id: test068
+  filename: inputs/test068.txt
+  description: Types=duplicates,near_power,xor_zero | T=5
+  expected_output: '8
+
+    0
+
+    0
+
+    12273
+
+    130895'
+- id: test069
+  filename: inputs/test069.txt
+  description: Types=near_power,same_msb,duplicates | T=10
+  expected_output: '71
+
+    26
+
+    1130048
+
+    1444
+
+    0
+
+    174
+
+    5938
+
+    286614
+
+    2
+
+    760787'
+- id: test070
+  filename: inputs/test070.txt
+  description: Types=random,xor_zero | T=5
+  expected_output: '50141880
+
+    0
+
+    12852020
+
+    0
+
+    0'
+- id: test071
+  filename: inputs/test071.txt
+  description: Types=xor_zero | T=5
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test072
+  filename: inputs/test072.txt
+  description: Types=random,near_power,xor_zero | T=7
+  expected_output: '8136
+
+    5
+
+    2
+
+    4
+
+    1048415
+
+    927
+
+    16240'
+- id: test073
+  filename: inputs/test073.txt
+  description: Types=same_msb | T=8
+  expected_output: '24544
+
+    660880
+
+    39471
+
+    1672137
+
+    2
+
+    21613
+
+    988580
+
+    13923'
+- id: test074
+  filename: inputs/test074.txt
+  description: Types=random | T=4
+  expected_output: '266308096
+
+    616887344
+
+    17946189
+
+    127895539'
+- id: test075
+  filename: inputs/test075.txt
+  description: Types=duplicates | T=3
+  expected_output: '98300
+
+    0
+
+    22988'
+- id: test076
+  filename: inputs/test076.txt
+  description: Types=all_odd_xor_one | T=4
+  expected_output: '13
+
+    6
+
+    6
+
+    6'
+- id: test077
+  filename: inputs/test077.txt
+  description: Types=near_power,random,xor_zero | T=8
+  expected_output: '1
+
+    64
+
+    196255787
+
+    125130095
+
+    118708734
+
+    19
+
+    0
+
+    0'
+- id: test078
+  filename: inputs/test078.txt
+  description: Types=random,duplicates,all_odd_xor_one | T=7
+  expected_output: '12
+
+    1161137388
+
+    1515991
+
+    1223
+
+    2
+
+    177775809
+
+    253612353'
+- id: test079
+  filename: inputs/test079.txt
+  description: Types=same_msb,xor_zero,all_odd_xor_one | T=6
+  expected_output: '46641
+
+    763
+
+    0
+
+    12
+
+    10
+
+    0'
+- id: test080
+  filename: inputs/test080.txt
+  description: Types=same_msb,duplicates | T=10
+  expected_output: '33
+
+    0
+
+    93762821
+
+    3
+
+    37883769
+
+    20104
+
+    0
+
+    5834
+
+    0
+
+    0'
+- id: test081
+  filename: inputs/test081.txt
+  description: Types=random,xor_zero | T=9
+  expected_output: '11231964
+
+    0
+
+    0
+
+    161694614
+
+    0
+
+    857289488
+
+    0
+
+    137105831
+
+    378473349'
+- id: test082
+  filename: inputs/test082.txt
+  description: Types=near_power | T=5
+  expected_output: '4194302
+
+    4
+
+    65384
+
+    16328
+
+    7'
+- id: test083
+  filename: inputs/test083.txt
+  description: Types=same_msb,xor_zero,all_odd_xor_one | T=10
+  expected_output: '0
+
+    9
+
+    0
+
+    9
+
+    36
+
+    17658206
+
+    7
+
+    303
+
+    0
+
+    1'
+- id: test084
+  filename: inputs/test084.txt
+  description: Types=duplicates | T=3
+  expected_output: '0
+
+    0
+
+    0'
+- id: test085
+  filename: inputs/test085.txt
+  description: Types=near_power,all_odd_xor_one | T=10
+  expected_output: '20
+
+    5
+
+    27
+
+    10
+
+    7
+
+    6
+
+    4
+
+    16293
+
+    64
+
+    14'
+- id: test086
+  filename: inputs/test086.txt
+  description: Types=same_msb,near_power | T=4
+  expected_output: '3
+
+    159
+
+    10056058
+
+    4'
+- id: test087
+  filename: inputs/test087.txt
+  description: Types=duplicates,near_power | T=3
+  expected_output: '6
+
+    10
+
+    0'
+- id: test088
+  filename: inputs/test088.txt
+  description: Types=random,all_odd_xor_one | T=8
+  expected_output: '8
+
+    7
+
+    53
+
+    61974354
+
+    1
+
+    26
+
+    3
+
+    13'
+- id: test089
+  filename: inputs/test089.txt
+  description: Types=duplicates,random | T=7
+  expected_output: '0
+
+    0
+
+    0
+
+    1342072411
+
+    16777227
+
+    668185
+
+    393541912'
+- id: test090
+  filename: inputs/test090.txt
+  description: Types=xor_zero,same_msb | T=10
+  expected_output: '0
+
+    1381073
+
+    468
+
+    0
+
+    357
+
+    0
+
+    114
+
+    0
+
+    0
+
+    343'
+- id: test091
+  filename: inputs/test091.txt
+  description: Types=random | T=7
+  expected_output: '32481291
+
+    965373449
+
+    30689366
+
+    541490731
+
+    102463607
+
+    49981611
+
+    1639927'
+- id: test092
+  filename: inputs/test092.txt
+  description: Types=all_odd_xor_one | T=5
+  expected_output: '7
+
+    18
+
+    11
+
+    5
+
+    13'
+- id: test093
+  filename: inputs/test093.txt
+  description: Types=random,near_power | T=3
+  expected_output: '181
+
+    458925265
+
+    3'
+- id: test094
+  filename: inputs/test094.txt
+  description: Types=xor_zero | T=6
+  expected_output: '0
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test095
+  filename: inputs/test095.txt
+  description: Types=same_msb,near_power | T=7
+  expected_output: '1
+
+    12
+
+    6
+
+    930
+
+    174
+
+    3972
+
+    388'
+- id: test096
+  filename: inputs/test096.txt
+  description: Types=random,near_power,all_odd_xor_one | T=7
+  expected_output: '1
+
+    4
+
+    31703580
+
+    65466
+
+    43680233
+
+    1139007
+
+    426'
+- id: test097
+  filename: inputs/test097.txt
+  description: Types=xor_zero,duplicates | T=8
+  expected_output: '0
+
+    0
+
+    8388617
+
+    0
+
+    0
+
+    0
+
+    0
+
+    0'
+- id: test098
+  filename: inputs/test098.txt
+  description: Types=all_odd_xor_one | T=5
+  expected_output: '15
+
+    18
+
+    2
+
+    11
+
+    2'
+- id: test099
+  filename: inputs/test099.txt
+  description: Types=random | T=4
+  expected_output: '96753467
+
+    521209545
+
+    165840689
+
+    90542'
+- id: test100
+  filename: inputs/test100.txt
+  description: Types=duplicates,near_power | T=9
+  expected_output: '3
+
+    2097139
+
+    1190141
+
+    767
+
+    0
+
+    13
+
+    1221
+
+    0
+
+    1238408'

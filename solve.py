@@ -1,46 +1,73 @@
 import sys
+import heapq
 
 input = sys.stdin.readline
-T = int(input())
 
-for _ in range(T):
-    N = int(input())
-    A = tuple(map(int, input().split())) 
+def take_last(x, m):
+    return x & ((1 << (m + 1)) - 1)
 
-    # Compute total XOR
-    X = 0
-    for a in A:
-        X ^= a
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    
+    sx = 0
+    for v in a:
+        sx ^= v
 
-    if X == 0:
+    if sx == 0:
         print(0)
         continue
 
-    # Case 1: Change ONE element (optimal when possible)
-    min_ops = float('inf')
-    for a in A:
-        and_val = a & X
-        cost = X - 2 * and_val          # = (X ^ a) - a
-        if cost >= 0:
-            min_ops = min(min_ops, cost)
+    ans = float('inf')
+    used = [False] * n
+    can = []
 
-    if min_ops != float('inf'):
-        print(min_ops)
-        continue
+    # First phase
+    for mx in range(60, -1, -1):
+        pq = []
+        for i in range(n):
+            if used[i]:
+                continue
+            if not ((a[i] >> mx) & 1):
+                heapq.heappush(pq, (take_last(a[i], mx), i))
+                if len(pq) > 2:
+                    heapq.heappop(pq)
+        while pq:
+            _, ind = heapq.heappop(pq)
+            used[ind] = True
+            can.append(a[ind])
 
-    # Case 2: No single change works (all elements have the MSB of X set)
-    # → Carry one element over the MSB and adjust another
-    k = X.bit_length() - 1
-    p = 1 << (k + 1)                    # next power of 2
-    max_a = max(A)
-    carry_cost = p - max_a
+    a = can
+    n = len(a)
 
-    X_prime = X ^ max_a ^ p
-    min_adjust = float('inf')
-    for a in A:
-        and_val = a & X_prime
-        cost = X_prime - 2 * and_val
-        if cost >= 0:
-            min_adjust = min(min_adjust, cost)
+    # Second phase
+    for mx in range(60, -1, -1):
+        cur_ans = 0
+        suf = take_last(sx, mx)
+        pre = suf ^ sx
 
-    print(carry_cost + min_adjust)
+        if pre > 0:
+            break
+
+        b = a[:]
+        ok = False
+
+        for bit in range(mx, -1, -1):
+            if bit != mx and not ((suf >> bit) & 1):
+                continue
+
+            b.sort(key=lambda u: take_last(u, bit), reverse=True)
+
+            for i in range(n):
+                if not ((b[i] >> bit) & 1) and (not ok or ((suf >> bit) & 1)):
+                    ok = True
+                    to = (1 << bit)
+                    cur_ans += to - take_last(b[i], bit)
+                    suf ^= take_last(b[i], bit) ^ to
+                    b[i] ^= take_last(b[i], bit) ^ to
+
+        if ok and suf == 0:
+            ans = min(ans, cur_ans)
+
+    print(ans)
